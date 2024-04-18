@@ -380,7 +380,8 @@
   transition: 200ms ease-in-out;
 }
 
-.img-wrapper:hover > img.blur {
+.img-wrapper:hover > img.blur,
+.img-wrapper:click > img.blur {
   filter: blur(5px);
 }
 
@@ -388,7 +389,8 @@
   filter: grayscale(1);
 }
 
-.img-wrapper:hover > img.zoom {
+.img-wrapper:hover > img.zoom,
+.img-wrapper:click > img.zoom {
   transform: scale(1.1);
 }
 
