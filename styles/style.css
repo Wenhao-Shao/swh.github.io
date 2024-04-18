@@ -694,6 +694,7 @@ footer h4 {
     }
     .intro-images {
       text-align: center;
+      
     }
     .intro-social {
       display: -webkit-box;
@@ -728,6 +729,7 @@ footer h4 {
     html {
       font-size: 45%;
     }
+
     svg {
       height: 30%;
     }
@@ -765,14 +767,15 @@ footer h4 {
     }
     .selfie {
       max-width: 150px;
-      margin-left: 5rem;
+
     }
     .selfie2 {
       max-width: 100px;
     }
     .intro-text {
-      margin-top: 0rem;
+      margin: 0rem;
       text-align:justify;
+      padding: 0rem;
     }
     .intro-images {
       text-align: center;
@@ -798,7 +801,23 @@ footer h4 {
     footer {
       min-height: 10vh;
     }
-
+    .research-header {
+      padding-right: 3rem;
+      font-size: 1rem;
+    }
+    .research-nav ul {
+      margin:0;
+      padding: 1rem;
+    }
+    .research-nav {
+      margin:0;
+      padding: 1rem;
+    }
+    .research-text {
+      padding-right: 0;
+      font-size: 1.5rem;
+      margin: 0;
+    }
 
   }
 
@@ -811,4 +830,14 @@ footer h4 {
   /*# sourceMappingURL=style.css.map */
   .extra-space {
     margin-top: 15rem;
+  }
+  .research-header {
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+  .research-text {
+    padding-right: 3rem;
+
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
   }
