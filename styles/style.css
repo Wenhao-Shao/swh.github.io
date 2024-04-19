@@ -40,10 +40,16 @@
     max-width: 500px;
     min-width:300px;
   }
+
   .selfie2 {
     padding:auto;
     max-width: 400px;
     min-width:200px;
+  }
+  .selfie3 {
+    padding:auto;
+    max-width: 600px;
+    min-width:600px;
   }
   h2 {
     font-size: 3rem;
@@ -168,59 +174,6 @@
     border-radius: 2rem;
   }
 
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  background-color: white;
-  color: black;
-  border: 2px solid #9c9c9c; /* Green */
-  border-radius: 2rem;
-  padding: 1rem 3rem;
-}
-
-/* Add a red background color to navbar links on hover */
-.dropdown:hover .dropbtn {
-  background-color: #9c9c9c; /* Green */
-  color: white;
-  border-radius: 2rem;
-  padding: 1rem 3rem;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 
 
 
@@ -314,6 +267,7 @@
 
 
   .intro-text,
+  .research-text,
   .intro-images {
     position:relative;
     right:0%;
@@ -326,9 +280,34 @@
   }
 
 
+  .research-intro {
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+
+
+
+
 /* add down arrow */
   .arrow {
-    border: solid rgb(101, 101, 101);
+    border: solid rgb(110, 110, 110);
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -394,8 +373,7 @@
   transition: 200ms ease-in-out;
 }
 
-.img-wrapper:hover > img.blur,
-.img-wrapper:click > img.blur {
+.img-wrapper:hover > img.blur {
   filter: blur(5px);
 }
 
@@ -403,8 +381,7 @@
   filter: grayscale(1);
 }
 
-.img-wrapper:hover > img.zoom,
-.img-wrapper:click > img.zoom {
+.img-wrapper:hover > img.zoom {
   transform: scale(1.1);
 }
 
@@ -514,13 +491,15 @@
 
   
   .image__title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+    text-align:center;
   }
   
   .image__description {
-    font-size: 1.25em;
+    font-size: 0.75em;
     margin-top: 0.25em;
+    text-align:center;
   }
 
 
@@ -562,7 +541,7 @@ opacity: 0;
             /* height:5px; */
   bottom:0;
   left:0;
-  margin-top: auto;
+  /* margin-top: auto; */
 
   }
   
@@ -582,12 +561,13 @@ opacity: 0;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-            margin-top: auto;
+            /* margin-top: auto; */
   }
   
-footer h4 {
+footer h4,
+footer h4 a u {
   font-size:10px;
-  margin-top: auto;
+  /* margin-top: auto; */
 }
   footer ul li a {
     color:#f9f9f9;
@@ -610,6 +590,7 @@ footer h4 {
       max-width: 300px;
       min-width:200px;
     }
+    
     .read-more {
       font-size: 1rem;
     }
@@ -692,6 +673,10 @@ footer h4 {
       margin-top: 0rem;
       text-align:justify;
     }
+    .research-text {
+      margin-top: 10rem;
+      text-align:left;
+    }
     .intro-images {
       text-align: center;
       
@@ -711,7 +696,8 @@ footer h4 {
           -ms-flex-direction: row;
               flex-direction: row;
     }
-    footer h4 {
+    footer h4,
+    footer h4 a u {
       font-size: 8px;
     }
     footer {
@@ -777,6 +763,7 @@ footer h4 {
       text-align:justify;
       padding: 0rem;
     }
+
     .intro-images {
       text-align: center;
     }
@@ -795,7 +782,8 @@ footer h4 {
           -ms-flex-direction: row;
               flex-direction: row;
     }
-    footer h4 {
+    footer h4,
+    footer h4 a u {
       font-size: 8px;
     }
     footer {
