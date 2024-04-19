@@ -46,10 +46,24 @@
     max-width: 400px;
     min-width:200px;
   }
-  .selfie3 {
+  .prj1-pic {
     padding:auto;
     max-width: 600px;
-    min-width:600px;
+    min-width:500px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .prj2-pic {
+    padding:auto;
+    max-width: 400px;
+    min-width:300px;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  .research-img1 {
+    padding:auto;
+    max-width: 600px;
+    min-width:550px;
   }
   h2 {
     font-size: 3rem;
@@ -590,7 +604,18 @@ footer h4 a u {
       max-width: 300px;
       min-width:200px;
     }
-    
+    .prj1-pic {
+      max-width: 500px;
+      min-width:400px;
+    }
+    .prj2-pic {
+      max-width: 300px;
+      min-width:200px;
+    }
+    .research-img1 {
+      max-width: 500px;
+      min-width:400px;
+    }
     .read-more {
       font-size: 1rem;
     }
@@ -619,6 +644,18 @@ footer h4 a u {
     }
 .selfie {
   height:200px;
+}
+.prj1-pic {
+  max-width: 500px;
+  min-width:400px;
+}
+.prj2-pic {
+  max-width: 300px;
+  min-width:200px;
+}
+.research-img1 {
+  max-width: 500px;
+  min-width:400px;
 }
   }
   @media screen and (max-width: 754px) {
@@ -667,6 +704,15 @@ footer h4 a u {
       max-width: 150px;
     }
     .selfie2 {
+      max-width: 100px;
+    }
+    .prj1-pic {
+      max-width: 100px;
+    }
+    .prj2-pic {
+      max-width: 150px;
+    }
+    .research-img1 {
       max-width: 100px;
     }
     .intro-text {
@@ -757,6 +803,10 @@ footer h4 a u {
     }
     .selfie2 {
       max-width: 100px;
+    }
+    .research-img1 {
+      max-width: 300px;
+      min-width: 200px;
     }
     .intro-text {
       margin: 0rem;
